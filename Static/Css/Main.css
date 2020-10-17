@@ -2025,7 +2025,7 @@ code[hljs-codeblock-inner] {
 
 /*loading*/
 
-/*#page-loading {
+#page-loading {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -2105,7 +2105,7 @@ code[hljs-codeblock-inner] {
 		transform: scale(.85);
 		opacity: 0
 	}
-}*/
+}
 
 .ajaxcard:hover {
 	transform: translateY(-5px);
