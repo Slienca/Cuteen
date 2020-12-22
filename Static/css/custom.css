@@ -1,0 +1,294 @@
+/*自定义logo*/
+.up-new { 
+    padding-right: 30px; 
+    padding-bottom: 5px; 
+    background: url(https://www.helloimg.com/images/2020/12/21/2_waifu2x_4x_3nb08e143323ef960c.png) no-repeat; 
+}
+
+.miao {
+    font-family: 'miao', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.mvboli {
+    font-family: 'mvboli', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+}
+ 
+.logolink .sakuraso {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    color: #464646;
+    height: auto;
+    line-height: 25px;
+    margin-right: 0;
+    padding-bottom: 0px;
+    padding-top: 1px;
+    text-size-adjust: 100%;
+    width: auto;
+}
+ 
+.logolink a:hover .sakuraso {
+    background-color: #f12c60;
+    color: #fff;
+}
+ 
+.logolink a:hover .shironeko {
+   color: #f12c60;
+}
+ 
+.logolink.miao a {
+    color: #464646;
+    float: left;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 56px;
+    padding-left: 6px;
+    padding-right: 15px;
+    text-decoration-line: none;
+}
+
+.logolink.miao .sakuraso,.logolink.miao .no {
+    font-size: 25px;
+    border-radius: 9px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+
+.logolink.miao .no {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.logolink a:hover .no {
+    color: #f12c60;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.logolink ruby {
+    ruby-position: under;
+    -webkit-ruby-position: after;
+}
+ 
+.logolink ruby rt {
+    font-size: 10px;
+    letter-spacing:2px;
+    transform: translateY(-15px);
+    opacity: 0;
+    transiton-property: opacity;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.logolink a:hover ruby rt {
+    opacity: 1
+}
+
+/*美化h标题*/
+#post h1 {
+font-size: 30px
+}
+
+#post h2 {
+position: relative;
+margin: 20px 0 32px!important;
+font-size: 1.55em;
+}
+
+#post h3 {
+font-size: 20px
+}
+
+#post h4 {
+font-size: 15px
+}
+
+#post h2::after {
+transition: all .35s;
+content: "";
+position: absolute;
+background: linear- 
+gradient(#3c67bd8c 30%,#3c67bd 70%);
+width: 1em;
+left: 0;
+box-shadow: 0 3px 3px rgba(255,20,147,.7);
+height: 3px;
+bottom: -8px;
+}
+
+#post h2::before {
+content: "";
+width: 100%;
+border-bottom: 1px solid #eee;
+bottom: -7px;
+position: absolute
+
+}
+
+#post h2:hover::after {
+width: 2.5em;
+}
+
+#post h1,#post h2,#post h3,#post h4,#post h5,#post h6 {
+color: #666;
+line-height: 1.4;
+font-weight: 700;
+margin: 30px 0 10px 0
+  }
+
+/*顶部滚动条*/
+#percentageCounter {
+    position:fixed;
+    left:0;
+    top:0;
+    height:3px;
+    z-index:99999;
+    background-color:rgba(255, 112, 173,0.45);
+}
+
+/*标签抖动特效*/
+.Pshake{ 
+    display: inline-block; 
+    will-change: transform; /*可以删除*/ 
+    -webkit-transform-origin: center center; 
+    -ms-transform-origin: center center; 
+    transform-origin: center center; 
+    -webkit-animation: Pshake_Crazy 1s ease-in-out infinite; 
+    animation: Pshake_Crazy 1s ease-in-out infinite; 
+}
+
+@keyframes Pshake_Crazy{ 
+    10%{transform:translate(-0.5px,-0.5px) rotate(0.5deg);} 
+    20%{transform:translate(-0.5px,1.5px) rotate(0.5deg);} 
+    30%{transform:translate(1.5px,0.5px) rotate(0.5deg);} 
+    40%{transform:translate(1.5px,-0.5px) rotate(-0.5deg);} 
+    50%{transform:translate(2.5px,1.5px) rotate(1.5deg);} 
+    60%{transform:translate(-0.5px,-0.5px) rotate(-0.5deg);} 
+    70%{transform:translate(-0.5px,2.5px) rotate(1.5deg);} 
+    80%{transform:translate(2.5px,-1.5px) rotate(-0.5deg);} 
+    90%{transform:translate(1.5px,-0.5px) rotate(1.5deg);} 
+    0%,100%{transform:translate(0,0) rotate(0);} 
+}
+
+/*自定义友链样式*/
+.card,.row.mb-4 a:hover{
+   box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+    -moz-box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+}
+
+/*悬停上浮*/
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/*赞赏图标跳动*/
+#like.btn.btn-outline-primary.rounded-pill.align-items-center.d-inline-flex,#headingMoney.btn.btn-outline-primary.rounded-pill.align-items-center.d-inline-flex,.article-poster-button.btn.btn-outline-primary.rounded-pill.align-items-center.d-inline-flex {
+    animation: star 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes star {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/*图片圆角及阴影化*/
+img.lazy.loaded{
+    border-radius: 15px;
+    box-shadow: darkgrey 0px 0px 5px 5px;
+}
+
+/*首页文章圆角*/
+.carousel-inner,.article.have-img.d-flex{
+   border-radius: 15px;
+   box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+}
+
+/*头像旋转和呼吸光环*/
+.friends-img.mr-2.lazy.loaded:hover{
+transform:rotate(360deg);
+}
+
+.comment-avatar:hover{
+transform:rotate(360deg);
+}
+
+.sidebar-comment-avatar.mr-1:hover{
+transform:rotate(360deg);
+}
+
+.friends-img.mr-2.lazy.loaded,.comment-avatar,.sidebar-comment-avatar.mr-1 {
+    border-radius: 50%;
+    animation: light 4s ease-in-out infinite;
+    transition: all 0.5s;
+}
+
+@keyframes light {
+    0% {
+        box-shadow: 0 0 4px #ff1354;
+    }
+
+    25% {
+    box-shadow: 0 0 16px #1ebbff;
+    }
+
+    50% {
+    box-shadow: 0 0 4px #0ed39f;
+    }
+
+    75% {
+    box-shadow: 0 0 16px #4fe7f4;
+    }
+
+    100% {
+    box-shadow: 0 0 4px #f35444;
+    }
+}
+
+/*文章列表圆角+边框*/
+.post-ctx,.post-comment.mt-4,.sidebar-box {
+    background-clip: border-box;
+    border-radius: 15px;
+    /*box-shadow: -2px 8px 17px 0 rgb(157 167 255 / 36%), 0 6px 20px 0 rgb(255 255 255 / 19%);*/
+    box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+}
+
+.sidebar-banner{
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*评论框动画*/
+#comment-textarea {
+    background-image:url(https://www.helloimg.com/images/2020/10/19/ZzaGcV7555e51d6b8ef3ac.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    transition:all 0.25s ease-in-out 0s;
+    }
+    textarea#comment-textarea:focus{
+    background-position-y:120px;
+    transition:all 0.25s ease-in-out 0s;
+} 
+
+/*侧边栏图标*/
+.sidebar-box-1:before {
+    display:inline-block;
+    z-index:1;
+    content:" ";
+    position:relative;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background:#f92900!important;
+    width:12px;
+    height:12px;
+    -webkit-box-shadow:20px 0 #fdbc40,40px 0 #35cd4b;
+    box-shadow:20px 0 #fbc606,40px 0 #448ef6;
+    float:right;right:55px;top:35px;
+    border-color:transparent;
+    margin-top:-15px;
+}
